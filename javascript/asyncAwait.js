@@ -1,21 +1,21 @@
-// function primeiraFuncao(){
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             console.log('esperou a promise ser executada')
-//             resolve()
-//         }, 5000)
-//     })
-// }
+function primeiraFuncao(){
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log('esperou a promise ser executada')
+            resolve()
+        }, 5000)
+    })
+}
 
-// async function segundaFuncao(){
-//     console.log('inicou')
+async function segundaFuncao(){
+    console.log('inicou')
 
-//     await primeiraFuncao()
+    await primeiraFuncao()
 
-//     alert('depois terminou')
-// }
+    alert('depois terminou')
+}
 
-// segundaFuncao()
+segundaFuncao()
 
 function getUser(id) {
     return fetch(`https://reqres.in/api/users?id=${id}`) //o fetch recurso que faz requisições assincronas

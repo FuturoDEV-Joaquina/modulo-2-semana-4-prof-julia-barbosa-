@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AULA 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>AULA 3</title>
 </head>
 <body>
     <!-- <script src="javascript/classes.js"></script> -->
     <!-- <script src="javascript/escopo.js"></script> -->
     <!-- <script src="javascript/promisses.js"></script> -->
-    <script src="javascript/asyncAwait.js"></script>
-    <h1>AULA 2 TURMA JOAQUINA- PROMISSES, ASYNC E AWAIT</h1>
+    <!-- <script src="javascript/asyncAwait.js"></script> -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/setTimeOut.js"></script>
+    <h1>AULA 3 TURMA JOAQUINA- SetInterval, SetTimeOut e Import/Export</h1>
+    <h2>SetTimeOut - Exemplo</h2>
+    <p id="paragrafo">Clica aqui. Depois de 3 segundos uma alerta será exibido com uma mensagem.</p>
+    <button class="btn-click" onclick="pararAlerta = setTimeout(exibirMensagem, 3000)">Clique aqui</button>
+    <button class="btn-stop-click"onclick="clearTimeout(pararAlerta)">Parar ação de timeOut do botão ao lado</button>
+    <button class="btn-stop-click"onclick="pararTimeOut()">Parar timeOut</button>
+    <h2>SetInverval - Exemplo</h2>
+    <button onclick="pararClique = setInterval(clicaAqui, 2000)">Clica aqui por favor</button>
+    <button onclick="clearInterval(pararClique)">Pare aqui por favor</button>
+    <h2>O horário atual é:</h2>
+    <p id="hora"></p>
+    <p id="ola"></p>
+    <button onclick="clearInterval(pararHora)">Parar hora</button>
 </body>
 </html>

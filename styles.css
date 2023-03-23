@@ -1,0 +1,31 @@
+h1 {
+    color: red;
+    border-style: outset;
+    border-color: rgb(160, 109, 95);
+}
+
+h2 {
+    color: rgb(255, 0, 195);
+    border-style: outset;
+    width: max-content;
+}
+
+p {
+    color: rgb(6, 8, 6);
+    border-color: cadetblue;
+}
+
+.btn-click{
+    background-color: rgb(16, 117, 16);
+    color: aliceblue;
+}
+
+.btn-stop-click{
+    background-color: rgb(225, 27, 27);
+    color: aliceblue;
+}
+
+#paragrafo{
+    border: 1px solid gold;
+}
+
